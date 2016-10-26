@@ -12,7 +12,7 @@ def hi():
 
 @app.route('/get_image', methods=['POST'])
 def get_image():
-    return 'Get Image'
+    return flask.jsonify([1,2,3,4])
 
 # app.run(host='0.0.0.0', debug=True, threaded=True)
 
