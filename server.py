@@ -6,6 +6,10 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World'
 
+@app.route('/hi')
+def hi():
+    return 'Hi'
+
 @app.route('/get_image', methods=['POST'])
 def get_image():
     return 'Get Image'
