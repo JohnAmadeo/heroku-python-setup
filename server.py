@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 import os
+import json
 app = Flask(__name__)
 
 @app.route('/')
@@ -12,9 +13,7 @@ def hi():
 
 @app.route('/get_image', methods=['POST'])
 def get_image():
-    return flask.jsonify([1,2,3,4])
-
-# app.run(host='0.0.0.0', debug=True, threaded=True)
+    return 'Get Image'
 
 if __name__ == '__main__':
     app.debug = True
